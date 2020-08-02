@@ -3,6 +3,11 @@ body {
   overflow: hidden;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .sphere {
   fill: steelblue;
 }
@@ -15,4 +20,45 @@ body {
 
 .country:hover {
   fill: greenyellow;
+}
+
+.tooltip {
+  box-shadow: 2px 2px 18px 0 #aaaaaa;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.wrapper {
+  background: blue;
+}
+
+.resize-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: pink; */
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 5px;
+}
+
+.info-container {
+  margin-top: 50px;
+  background: whitesmoke;
+  border-radius: 20px;
+  width: 960px;
+}
+
+.info-title {
+  padding: 30px 20px;
+}
+
+.info {
+  padding: 10px 20px;
 }
