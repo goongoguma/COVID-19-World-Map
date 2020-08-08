@@ -4,6 +4,7 @@ import * as d3 from 'd3';
 import * as topojson from 'topojson-client';
 import axios from 'axios';
 import CountUp from 'react-countup';
+import { Search } from './search';
 import './App.css';
 
 export const App = () => {
@@ -58,7 +59,6 @@ export const App = () => {
         .attr('d', d => pathGenerator(d))
         .on("mouseover", function (d) {
           return tooltip.style("visibility", "visible").html(() => {
-            console.log(d)
             if (d.Country) {
               return `<div class='tooltip'>
               <h4>${d.Country}</h4>
@@ -120,7 +120,6 @@ export const App = () => {
         </div>
       }
     </div>
-
   )
 }
 
